@@ -1,0 +1,90 @@
+.timer-container {
+    color: $color5;
+    margin: 0 auto;
+    text-align: center;
+    background-color: $color2;
+    border-bottom: dashed 1px $color5;
+}
+
+#headline {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    font-family: $headerFont;
+    cursor: default;
+
+    &:hover {
+        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+        color: $color1;
+    }
+
+    @keyframes shake {
+
+        10%,
+        90% {
+            transform: translate3d(-1px, 0, 0);
+        }
+
+        20%,
+        80% {
+            transform: translate3d(2px, 0, 0);
+        }
+
+        30%,
+        50%,
+        70% {
+            transform: translate3d(-4px, 0, 0);
+        }
+
+        40%,
+        60% {
+            transform: translate3d(4px, 0, 0);
+        }
+    }
+}
+
+.timer-box {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    font-family: $textFont;
+    background-color: $color3;
+    cursor: default;
+    box-shadow: 0 0 10px;
+
+    &:hover {
+        background-color: $color5;
+        color: $color4;
+    }
+
+}
+
+.timer-box2 {
+    display: block;
+    font-size: 4.5rem;
+    border: 10px solid black;
+
+    &:hover {
+        border: 10px ridge $color1;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #headline {
+        font-size: 1.5rem;
+    }
+
+    .timer-box {
+        font-size: 1.125rem;
+        padding: .75rem;
+    }
+
+    .timer-box2 {
+        font-size: 3.375rem;
+    }
+}

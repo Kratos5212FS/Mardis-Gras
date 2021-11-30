@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:wght@300&display=swap');
+
+
+$color1: #9453A6;
+$color2: #8CBF3F;
+$color3: #F2CC0F;
+$color4: #F2F2F2;
+$color5: #0D0D0D;
+
+$headerFont: 'Henny Penny';
+$header2Font: 'Pattaya';
+$textFont: 'Roboto',
+sans-serif;
+$baseFontSize: 1.4em;
+$basicTextSize: 1.2em;
+
+*{
+    padding: 0;  
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "navbar";
+@import "body";
+@import "faq";
+@import "timer";
+@import "accordionGallery";
+@import "slider";  
+@import "indexSide";
+@import "footer";
+@import "about";
+@import "MAModal";
+@import "MediaPlayer";
+@import "contact";
+@import "quiz";
